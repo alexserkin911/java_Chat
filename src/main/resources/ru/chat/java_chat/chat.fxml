@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0"
+            xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ru.chat.java_chat.ChatController">
+   <MenuBar prefHeight="25.0" prefWidth="403.0">
+       <Menu mnemonicParsing="false" text="File">
+           <MenuItem mnemonicParsing="false" text="Close" onAction="#quit" />
+       </Menu>
+   </MenuBar>
+    <VBox layoutX="3.0" layoutY="26.0" prefHeight="574.0" prefWidth="400.0">
+        <TextArea fx:id="output" editable="false" prefHeight="537.0" prefWidth="400" />
+        <HBox prefHeight="41.0" prefWidth="400.0">
+            <TextField fx:id="input" onAction="#send" prefHeight="42.0" prefWidth="335.0" />
+            <Button mnemonicParsing="false" onAction="#send" prefHeight="56.0" prefWidth="66.0" text="SEND" />
+        </HBox>
+    </VBox>
+</AnchorPane>

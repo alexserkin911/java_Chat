@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="246.0" prefWidth="492.0"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ru.chat.java_chat.RegistrController">
+    <TextField fx:id="login" layoutX="155.0" layoutY="49.0" prefHeight="25.0" prefWidth="177.0" />
+    <TextField fx:id="pass" layoutX="155.0" layoutY="90.0" prefHeight="25.0" prefWidth="177.0" />
+    <Button layoutX="179.0" layoutY="136.0" mnemonicParsing="false" onAction="#enter"
+            prefHeight="25.0" prefWidth="133.0" text="Зарегистрироваться" />
+   <Label layoutX="86.0" layoutY="53.0" prefHeight="17.0" prefWidth="53.0" text="Login" />
+   <Label layoutX="75.0" layoutY="94.0" prefHeight="17.0" prefWidth="64.0" text="Password" />
+</AnchorPane>
